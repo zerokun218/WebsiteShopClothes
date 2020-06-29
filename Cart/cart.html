@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CART</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js">
+
+    </script>
+
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <a class="brand" href="../Home/home.html"><h3><b>STORE</b></h3></a>
+      <ul class="navbar">
+        <li><a href="../Home/home.html">Home</a></li>
+        <li><a href="../Shop/Shop.html">Shop</a></li>
+        <li><a href="../Blog/blog.html">Blog</a></li>
+        <li><a href="../About/about.html">About</a></li>
+        <!-- <li><a href="../Contact/contact.html">Contact</a></li> -->
+        <li class = 'active'><a href="#" >Cart</a></li>
+        <li><a href="../Home/index.html">Logout</a></li>
+      </ul>
+    </div>
+    <!-- END HEADER -->
+
+
+<!-- BODY -->
+<div class="body">
+  <div class="myCart">
+    <h2>MY CART</h2>
+  </div>
+  <br>
+  <div class="item1" id='1'>
+    <div class="image">
+      <a href="../Detail/detail.html"><img src="../images/img_bg_1.jpg" width="100%" height="100%" alt="clothes">
+</a>
+    </div>
+    <div class="description">
+      <a href="#" class="del-btn" onclick="deleteItem(1)">Delete</a>
+      <p><b>Name:</b> DRESS</p>
+      <b>Color: </b>
+      <select class="selt" name="">
+        <option value="1">Red</option>
+        <option value="2" selected>Green</option>
+        <option value="3">Yellow</option>
+        <option value="4">black</option>
+      </select>
+      <br><br>
+      <b>Size: </b>
+      <select class="selt" name="">
+        <option value="1">28</option>
+        <option value="2" selected>29</option>
+        <option value="3">30</option>
+        <option value="4">31</option>
+      </select>
+      <br><br>
+      <b>Amount: </b>
+      <input type="text" name="" value = '2' id='amount1' onchange="validate(1)">
+      <br><br>
+      <b>Cost: </b>
+      <input type="text" name="" id="cost1" value="600" disabled>
+    </div>
+  </div>
+
+
+  <div class="item1" id='2'>
+    <div class="image">
+      <a href="../Detail/detail.html"><img src="../images/blog-3.jpg" width="100%" height="100%" alt="clothes">
+      </a>
+    </div>
+    <div class="description">
+      <a href="#" class="del-btn" onclick="deleteItem(2)">Delete</a>
+      <p><b>Name:</b> DRESS</p>
+      <b>Color: </b>
+      <select class="selt" name="">
+        <option value="1">Red</option>
+        <option value="2" selected>Green</option>
+        <option value="3">Yellow</option>
+        <option value="4">black</option>
+      </select>
+      <br><br>
+      <b>Size: </b>
+      <select class="selt" name="">
+        <option value="1">28</option>
+        <option value="2" selected>29</option>
+        <option value="3">30</option>
+        <option value="4">31</option>
+      </select>
+      <br><br>
+      <b>Amount: </b>
+      <input type="text" name="" value = '1' id='amount2' onchange="validate(2)">
+      <br><br>
+      <b>Cost: </b>
+      <input type="text" name="" id="cost2" value="300" disabled>
+    </div>
+  </div>
+
+  <div class="item1" id ='3'>
+    <div class="image">
+      <a href="../Detail/detail.html"><img src="../images/blog-1.jpg" width="100%" height="100%" alt="clothes">
+      </a>
+    </div>
+    <div class="description">
+      <a href="#" class="del-btn" onclick="deleteItem(3)">Delete</a>
+      <p><b>Name:</b> DRESS</p>
+      <b>Color: </b>
+      <select class="selt" name="">
+        <option value="1">Red</option>
+        <option value="2" selected>Green</option>
+        <option value="3">Yellow</option>
+        <option value="4">black</option>
+      </select>
+      <br><br>
+      <b>Size: </b>
+      <select class="selt" name="">
+        <option value="1">28</option>
+        <option value="2" selected>29</option>
+        <option value="3">30</option>
+        <option value="4">31</option>
+      </select>
+      <br><br>
+      <b>Amount: </b>
+      <input type="text" name="" value = '1' id='amount3' onchange="validate(3)">
+      <br><br>
+      <b>Cost: </b>
+      <input type="text" name="" id="cost3" value="300" disabled>
+    </div>
+  </div>
+
+  <div class="item1" id ="4">
+    <div class="image">
+      <a href="../Detail/detail.html"><img src="../images/about.jpg" width="100%" height="100%" alt="clothes">
+      </a>
+    </div>
+    <div class="description">
+      <a href="#" class="del-btn" onclick="deleteItem(4)">Delete</a>
+      <p><b>Name:</b> DRESS</p>
+      <b>Color: </b>
+      <select class="selt" name="">
+        <option value="1">Red</option>
+        <option value="2" selected>Green</option>
+        <option value="3">Yellow</option>
+        <option value="4">black</option>
+      </select>
+      <br><br>
+      <b>Size: </b>
+      <select class="selt" name="">
+        <option value="1">28</option>
+        <option value="2" selected>29</option>
+        <option value="3">30</option>
+        <option value="4">31</option>
+      </select>
+      <br><br>
+      <b>Amount: </b>
+      <input type="text" name="" value = '1' id='amount4' onchange="validate(4)">
+      <br><br>
+      <b>Cost: </b>
+      <input type="text" name="" id="cost4" value="300" disabled>
+    </div>
+  </div>
+
+  <div class="confirm">
+    <a href="../Shop/Shop.html" onclick="onConfirm()">CONFIRM</a>
+  </div>
+
+
+</div>
+
+<!-- END BODY -->
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <ul>
+        <li>
+          <div class="about">
+            <h5><u>ABOUT STORE</u></h5>
+            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="customer">
+            <h5><u>CUSTOMER CARE</u></h5>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Return/Exchange</a></li>
+              <li><a href="#">Gift Voucher</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Special</a></li>
+              <li><a href="#">Customer services</a></li>
+              <li><a href="#">Site maps</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="infor">
+            <h5><u>INFORMATION</u></h5>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Delivery information</a></li>
+              <li><a href="#">privacy Policy</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Order Tracking</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="news">
+            <h5><u>NEWS</u></h5>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Exhibitions</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- <li>
+          <div class="address">
+            <h5><u>ADDRESS</u></h5>
+            <ul>
+              <li>291 South 21th Street,
+Suite 721 New York NY 10016</li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Website</a></li>
+            </ul>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </body>
+</html>

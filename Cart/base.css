@@ -1,0 +1,92 @@
+/* HEADER */
+* {
+  background-color: #f8f5f5;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.header {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: block;
+  text-align: center;
+  height: 120px;
+  line-height: 75px;
+}
+
+.header .brand {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  float: left;
+  margin-left: 150px;
+}
+
+.header .navbar {
+  float: right;
+}
+
+.header .navbar li {
+  display: inline;
+  padding: 8px;
+  border-right: 2px solid lightgray;
+}
+
+.header .navbar li a{
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s color;
+}
+
+.header .navbar li a:hover{
+  color: orange;
+}
+
+.header .navbar li a:focus {
+  color: orange;
+}
+
+.header .navbar .active a{
+  color: orange;
+}
+
+
+
+/* FOOTER */
+.footer {
+  margin: 50px;
+  padding: 50px;
+  /* display: block; */
+  /* text-align: center; */
+  height: 300px;
+  color: gray;
+}
+
+
+.footer ul li {
+  display: inline-flex;
+  width: 180px;
+  /* display: inline-block; */
+  /* float: left; */
+  margin-left: 100px;
+  text-align: left;
+
+}
+
+.footer ul li ul li{
+  margin-left: -40px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s color;
+}
+
+.footer a:hover{
+  color: orange;
+}

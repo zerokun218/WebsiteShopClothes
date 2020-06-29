@@ -1,0 +1,244 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Shop.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="./Shop.js"></script>
+    <title>SHOP</title>
+</head>
+
+<body>
+    <!-- myHeader -->
+    <div class="myHeader">
+        <a class="brand" href="../Home/index.html"><h3><b>STORE</b></h3></a>
+        <ul class="navbar">
+            <li><a href="../Home/index.html">Home</a></li>
+            <li class="active"><a href="Shop2.html">Shop</a></li>
+            <li><a href="../Blog/blog2.html">Blog</a></li>
+            <li><a href="../About/about2.html">About</a></li>
+            <li><a href="../Form/login.html" onclick="clickCart()">Cart</a></li>
+            <li><a href="../Form/login.html">Sign in</a></li>
+          </ul>
+      </div>
+
+      <h3 style="text-align: center; margin: 0px; padding: 20px; color: orange;">SPORT STYLE</h3>
+      <!-- END myHeader -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 left">
+                <div class="categories">
+                    <h5>CATEGORIES</h5>
+                    <div class="types">
+                        <h6 onclick="showItem('men')">MEN <span onclick="showItem('men')" id="men-items" style="margin-left: 72px; cursor: pointer;">+</span></h2>
+                        <ul class="itemslist" id="men">
+                            <li onclick="changeItem(1)">Jeans</li>
+                            <li onclick="changeItem(2)">T-Shirt</li>
+                            <li onclick="changeItem(3)">Jacket</li>
+                            <li onclick="changeItem(0)">Shoes</li>
+                        </ul>
+                    </div>
+                    <div class="types">
+                        <h6 onclick="showItem('women')">WOMEN <span onclick="showItem('women')" id="women-items" style="margin-left: 47px; cursor: pointer;">+</span></h2>
+                        <ul class="itemslist" id="women">
+                            <li onclick="changeItem(3)">Jeans</li>
+                            <li onclick="changeItem(2)">T-Shirt</li>
+                            <li onclick="changeItem(1)">Jacket</li>
+                            <li onclick="changeItem(0)">Shoes</li>
+                        </ul>
+                    </div>
+                    <div class="types">
+                        <h6 onclick="showItem('jewelry')" >JEWELRY <span onclick="showItem('jewelry')" id="jewelry-items" style="margin-left: 44px; cursor: pointer;">+</span></h2>
+                        <ul class="itemslist" id="jewelry">
+                            <li onclick="changeItem(2)">Jeans</li>
+                            <li onclick="changeItem(1)">T-Shirt</li>
+                            <li onclick="changeItem(0)">Jacket</li>
+                            <li onclick="changeItem(3)">Shoes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="categories">
+                    <h5>PRICE RANGE</h5>
+                    <p style="text-align: left; margin-left: 13px; margin-bottom: 5px;"><strong>Price from: </strong></p>
+                    <select name="pricefrom" id="pricefrom" style="width: 125px; border: 0.05px solid #f1e4e4; background-color: #fafafa; height: 35px; margin-bottom: 10px;">
+                        <option value="1">100</option>
+                        <option value="2">200</option>
+                        <option value="3">300</option>
+                        <option value="4">400</option>
+                      </select>
+                      <p style="text-align: left; margin-left: 13px; margin-bottom: 5px; margin-top: 10px;"><strong>Price to: </strong></p>
+                    <select name="pricefrom"  onchange="changeItems()" id="pricefrom" style="width: 125px; border: 0.05px solid #f1e4e4; background-color: #fafafa; height: 35px; margin-bottom: 20px;">
+                        <option value="1">100</option>
+                        <option value="2">200</option>
+                        <option value="3">300</option>
+                        <option value="4">400</option>
+                      </select>
+                </div>
+                <div class="color">
+                    <h5>COLOR</h5>
+                    <span style="background-color: #FFC300;" onclick="changeItem(2)"></span>
+                    <span style="background-color: antiquewhite;" onclick="changeItem(1)"></span>
+                    <span style="background-color: red;" onclick="changeItem(0)"></span>
+                    <span style="background-color: blue;" onclick="changeItem(0)"></span>
+                    <span style="background-color: green;" onclick="changeItem(3)"></span>
+                </div>
+                <div class="size">
+                    <h5>SIZE</h5>
+                    <div>
+                        <span onclick="changeItems()">S</span>
+                        <span onclick="changeItems()">XS</span>
+                        <span onclick="changeItems()">M</span>
+                    </div>
+                    <div>
+                        <span onclick="changeItems()">L</span>
+                        <span onclick="changeItems()">XL</span>
+                        <span onclick="changeItems()">XXL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="./images/image1.jpg"></a>
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="https://colorlib.com/preview/theme/store/images/item-9.jpg"></a>
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="https://colorlib.com/preview/theme/store/images/item-2.jpg"></a>
+
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="https://colorlib.com/preview/theme/store/images/item-4.jpg"></a>
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="https://colorlib.com/preview/theme/store/images/item-5.jpg"></a>
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;"src="https://colorlib.com/preview/theme/store/images/item-8.jpg"></a>
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="https://colorlib.com/preview/theme/store/images/item-7.jpg"></a>
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="https://colorlib.com/preview/theme/store/images/item-6.jpg"></a>
+
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                    <div class="col-lg-3 image">
+                        <div style="width: 300px;">
+                          <a href="../Detail/detail2.html"><img style="width: 100%; height: 350px;" src="./images/image1.jpg"></a>
+                            <span>New</span>
+                            <div class="on-hover">
+                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-eye"></i>
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>FLORAL DRESS </p>
+                         <p style="color: #FFC300">$300.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination justify-content-center">
+            <li class="page-item" onclick="moveback()"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item" onclick="changeActive(1)"><a class="page-link activepagi" href="#">1</a></li>
+            <li class="page-item" onclick="changeActive(2)"><a class="page-link" href="#">2</a></li>
+            <li class="page-item" onclick="changeActive(3)"><a class="page-link" href="#">3</a></li>
+            <li class="page-item" onclick="changeActive(4)"><a class="page-link" href="#">4</a></li>
+            <li class="page-item" onclick="changeActive(5)"><a class="page-link" href="#">5</a></li>
+            <li class="page-item" onclick="movenext()"><a class="page-link" href="#">Next</a></li>
+          </ul>
+    </div>
+
+</body>
+
+</html>

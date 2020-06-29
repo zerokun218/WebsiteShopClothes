@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <a class="brand" href="../Home/home.html"><h3><b>STORE</b></h3></a>
+      <ul class="navbar">
+        <li><a href="../Home/index.html">Home</a></li>
+        <li><a href="../Shop/Shop2.html">Shop</a></li>
+        <li><a href="../Blog/blog2.html">Blog</a></li>
+        <li><a href="../About/about2.html">About</a></li>
+        <li><a href="login.html" onclick="clickCart()">Cart</a></li>
+        <li class="active"><a href="#">Sign in</a></li>
+      </ul>
+    </div>
+    <!-- END HEADER -->
+
+
+<!-- BODY -->
+    <div class = "body">
+        <div class="login">
+            <div class="login-form" >
+                <h2>LOGIN</h2>
+                <form name="myForm" method="GET" action="../Home/home.html" onsubmit="return validateForm()">
+                    Account: <input type="text" name="username" id="account"/>
+                    <br><br>
+                    Password: <input type="password" name = "password" id="password"/>
+                    <br><br>
+                    <button type="submit" class="submit">Submit</button>
+                    <a href="signup.html">Register now</a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!-- END BODY -->
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <ul>
+        <li>
+          <div class="about">
+            <h5><u>ABOUT STORE</u></h5>
+            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="customer">
+            <h5><u>CUSTOMER CARE</u></h5>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Return/Exchange</a></li>
+              <li><a href="#">Gift Voucher</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Special</a></li>
+              <li><a href="#">Customer services</a></li>
+              <li><a href="#">Site maps</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="infor">
+            <h5><u>INFORMATION</u></h5>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Delivery information</a></li>
+              <li><a href="#">privacy Policy</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Order Tracking</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="news">
+            <h5><u>NEWS</u></h5>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Exhibitions</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- <li>
+          <div class="address">
+            <h5><u>ADDRESS</u></h5>
+            <ul>
+              <li>291 South 21th Street,
+Suite 721 New York NY 10016</li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Website</a></li>
+            </ul>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+  </body>
+</html>

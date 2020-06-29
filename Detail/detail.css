@@ -1,0 +1,54 @@
+h1 {
+  text-align: center;
+}
+* {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.sanpham {
+  display: grid;
+  grid-template-columns: 20% 20%;
+  padding-left: 30rem;
+}
+.right p {
+  padding-left: 2.7em;
+}
+.right h2 {
+  padding-left: 3rem;
+  color: #ffc300;
+}
+.mota li {
+  padding-left: 1rem;
+  list-style-type: none;
+  display: inline;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  border-radius: 18px;
+  border: 10px solid #e5e5e5;
+  background: #e00000;
+  border-color: #e00000;
+  color: white;
+}
+.mota {
+  margin-left: 26.67rem;
+}
+
+.add-to-cart {
+  text-align: center;
+  margin: 50px;
+}
+.btn-add {
+  text-decoration: none;
+  font-size: 25px;
+  text-align: center;
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.btn-add:hover{
+  background-color: green;
+  color: white;
+}

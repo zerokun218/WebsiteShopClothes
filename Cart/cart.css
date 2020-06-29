@@ -1,0 +1,71 @@
+.body {
+  margin: 150px;
+}
+
+.body .myCart {
+  text-align: center;
+}
+.body .myCart h2{
+  font-size: 35px;
+  color: orange;
+}
+
+.body .item1 {
+  height: 250px;
+  position: relative;
+  display: inline-flex;
+  border: 1px solid lightgray;
+  width: 45%;
+  margin: 20px;
+}
+
+.body .item1 .image {
+  width: 250px;
+}
+
+.body .item1 .description{
+  margin-left: 100px;
+}
+
+.body .item1 .description b{
+  display: inline-flex;
+  width: 80px;
+}
+
+.body .item1 .description .del-btn {
+  position: absolute;
+  right: 0px;
+  /* margin-left: 200px; */
+  text-decoration: none;
+  color: red;
+  border: 1px solid red;
+}
+
+.body .item1 .description input{
+  width: 30%;
+}
+
+.body .confirm {
+  text-align: center;
+  margin: 50px;
+}
+
+.body .confirm a  {
+  text-decoration: none;
+  color: green;
+  font-size: 25px;
+  border: 1px solid green;
+  padding: 10px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+.body .confirm a:hover{
+  color: orange;
+  border-color: orange;
+}
+
+
+.deleted {
+  display: none;
+}

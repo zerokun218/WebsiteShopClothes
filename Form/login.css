@@ -1,0 +1,167 @@
+/* HEADER */
+* {
+  background-color: #f8f5f5;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+.header {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: block;
+  text-align: center;
+  height: 120px;
+  line-height: 75px;
+}
+
+.header .brand {
+  color: black;
+  text-decoration: none;
+  position: relative;
+  float: left;
+  margin-left: 150px;
+}
+
+.header .navbar {
+  float: right;
+}
+
+.header .navbar li {
+  display: inline;
+  padding: 8px;
+  border-right: 2px solid lightgray;
+}
+
+.header .navbar li a{
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s color;
+}
+
+.header .navbar li a:hover{
+  color: orange;
+}
+
+.header .navbar li a:focus {
+  color: orange;
+}
+
+.header .navbar .active a{
+  color: orange;
+}
+
+
+
+/* FOOTER */
+.footer {
+  margin: 50px;
+  padding: 50px;
+  /* display: block; */
+  /* text-align: center; */
+  height: 300px;
+  color: gray;
+}
+
+
+.footer ul li {
+  display: inline-flex;
+  width: 180px;
+  /* display: inline-block; */
+  /* float: left; */
+  margin-left: 100px;
+  text-align: left;
+
+}
+
+.footer ul li ul li{
+  margin-left: -40px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s color;
+}
+
+.footer a:hover{
+  color: orange;
+}
+
+
+/* BODY */
+.body {
+  display: block;
+  margin: 0px auto;
+  width: 500px;
+  padding: 100px;
+}
+
+.body .login h2{
+  padding-top: 20px;
+  text-align: center;
+  background-color: white;
+  color: orange;
+}
+
+.body .login a{
+  background-color: white;
+  margin-left: 50px;
+  text-decoration: none;
+  color: #214963;
+  transition: 0.5s color;
+}
+
+.body .login a:hover {
+  color: orange;
+}
+
+
+.body .login .login-form {
+  background-color: white;
+}
+
+.body .login .login-form .submit {
+  color: blue;
+  background-color: white;
+  transition: 0.5s;
+}
+
+.body .login .login-form .submit:hover {
+  color: orange;
+  background-color: white;
+  border-color: white ;
+}
+
+form {
+  padding: 50px;
+  background-color: white;
+}
+
+form input{
+  background-color: white;
+  width: 100%;
+  border: 1px solid lightgray;
+}
+
+form input:hover{
+  background-color: #dee6f5;
+  border-color:none;
+}
+form input:focus{
+  border: none;
+  border-bottom: 1px dashed black;
+}
+
+form .submit {
+  border: 1px solid lightgray;
+}
+
+.btn {
+  text-align: center;
+  background-color: white;
+  border: 1px solid lightgray;
+}

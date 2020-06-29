@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="signup.css">
+    <script type="text/javascript" src="signup.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="header">
+      <a class="brand" href="../Home/home.html"><h3><b>STORE</b></h3></a>
+      <ul class="navbar">
+        <li><a href="../Home/index.html">Home</a></li>
+        <li><a href="../Shop/Shop2.html">Shop</a></li>
+        <li><a href="../Blog/blog2.html">Blog</a></li>
+        <li><a href="../About/about2.html">About</a></li>
+        <li><a href="login.html" onclick="clickCart()">Cart</a></li>
+        <li class="active"><a href="../Form/login.html">Sign in</a></li>
+      </ul>
+    </div>
+    <!-- END HEADER -->
+
+
+<!-- BODY -->
+    <div class = "body">
+        <div class="signup">
+            <div class="signup-form">
+                <h2>SIGNUP</h2>
+                <form name="myForm" method="GET" action="../Home/home.html" onsubmit="return validatePassword()">
+                    Username: <br><input type="text" name="username" id="username" pattern="[a-zA-Z]{2,}" title="just letters and at least 2 letters. For example: abc" required/>
+                    <br><br>
+                    Email Address: <br><input type="email" pattern="[a-zA-z0-9_\.]+@[a-zA-z]+\.[a-zA-z]{2,3}" title="For example: abc@def.com" required>
+                    <br><br>
+                    Phone Number: <br><input type="text" name="phone" id="phone" pattern="[0-9]{8,11}" title="please enter at least 8 numbers and less than 12 numbers" required/>
+                    <br><br>
+                    Account: <br><input type="text" name="account" id="account" pattern="[a-zA-Z0-9]{4,}" title="at least 4 letters and number" required/>
+                    <br><br>
+                    Password: <br><input type="password" name = "password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).{6,}" title="at least 1 number, 1 letter with lowercase, 1 letter with uppercase and minimun length is 6" required/>
+                    <br><br>
+                    Confirm Password: <br><input type="password" name = "password2" id="password2" required/>
+                    <br><br>
+                    <div class='btn'>
+                        <button type="submit" class="submit">register</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<!-- END BODY -->
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <ul>
+        <li>
+          <div class="about">
+            <h5><u>ABOUT STORE</u></h5>
+            <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="customer">
+            <h5><u>CUSTOMER CARE</u></h5>
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Return/Exchange</a></li>
+              <li><a href="#">Gift Voucher</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Special</a></li>
+              <li><a href="#">Customer services</a></li>
+              <li><a href="#">Site maps</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="infor">
+            <h5><u>INFORMATION</u></h5>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Delivery information</a></li>
+              <li><a href="#">privacy Policy</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Order Tracking</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="news">
+            <h5><u>NEWS</u></h5>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Exhibitions</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div class="address">
+            <h5><u>ADDRESS</u></h5>
+            <ul>
+              <li>291 South 21th Street,
+Suite 721 New York NY 10016</li>
+              <li><a href="#">Email</a></li>
+              <li><a href="#">Website</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

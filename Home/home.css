@@ -1,0 +1,182 @@
+.body {
+  margin: 50px;
+
+  text-align: center;
+}
+
+.body .popular-list {
+  margin-bottom: 100px;
+}
+
+.body .popular-list h3 {
+  display: block;
+}
+
+.body .popular-list h3:after {
+  margin: 5px;
+  content: '';
+  height: 3px;
+  width: 100px;
+  background-color: orange;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.body .popular-list h3:before {
+  margin: 5px;
+  display: inline-block;
+  content: '';
+  height: 3px;
+  width: 100px;
+  background-color: orange;
+  margin-right: 10px;
+
+}
+
+.body .popular-list ul li {
+  border: none;
+}
+.body .show-more{
+  text-decoration: none;
+  color: #2a1510;
+  transition: 0.5s;
+  padding: 10px;
+  width: 50px;
+  background-color: white;
+}
+.body .show-more:hover{
+  color: white;
+  background-color: gray;
+}
+
+
+.body .lastest-list {
+  margin-bottom: 100px;
+}
+
+.body .lastest-list h3:after {
+  margin: 5px;
+  content: '';
+  height: 3px;
+  width: 100px;
+  background-color: orange;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.body .lastest-list h3:before {
+  margin: 5px;
+  display: inline-block;
+  content: '';
+  height: 3px;
+  width: 100px;
+  background-color: orange;
+  margin-right: 10px;
+}
+
+.body .lastest-list ul li{
+  border: none;
+}
+
+.body .description {
+  color: gray;
+  font-style: italic;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.body .list-movies {
+
+}
+
+.body .list-movies li {
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+}
+
+.body .recommend-list{
+  display: grid;
+  width: 1100px;
+  height: 500px;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto auto ;
+  margin: 5px auto;
+  border: none;
+  margin-bottom: 200px;
+  margin-top: 100px;
+}
+
+.body .recommend-list .main {
+  grid-area: main;
+  border: none;
+}
+.body .recommend-list .sub {
+  grid-area: sub;
+  border: none;
+}
+.body .recommend-list .under{
+  grid-area: under;
+  border: none;
+}
+.body .recommend-list .under img{
+  height: 400px;
+}
+.body .recommend-list .sub2 {
+  grid-area: sub2;
+  border: none;
+}
+
+.body .recommend-list {
+  grid-template-areas: 'main main sub sub2' 'main main  under under';
+}
+
+
+/* SLIDESHOW */
+
+.body .pages {
+  text-align: center;
+  margin: 50px;
+}
+
+.body .pages a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+.active1 {
+  background-color: lightgray;
+}
+
+
+.slides1 {
+  display: none;
+}
+.slides2{
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
